@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+    
+    .view {
+        background: linear-gradient(0deg, rgba(73,51,96,1) 0%, rgba(22,12,91,1) 100%);
+    }
+
+    .features_card {
+        background: linear-gradient(0deg, rgba(85,8,161,1) 0%, rgba(0,0,0,1) 45%);  
+    }
+
+    .about {
+        background: linear-gradient(180deg, rgba(85,8,161,1) 0%, rgba(0,0,0,1) 51%);
+    }
+    
+    .news {
+        background: linear-gradient(0deg, rgba(85,8,161,1) 0%, rgba(0,0,0,1) 45%);
+    }
+
+    .pricing_card {
+        background: #333;
+    }
+
+    .subcribe {
+        background: linear-gradient(180deg, rgba(85,8,161,1) 0%, rgba(0,0,0,1) 51%, rgba(80,8,152,1) 100%);
+    }
+
+    .footer {
+        background: linear-gradient(180deg, rgba(85,8,161,1) 25%, rgba(0,0,0,1) 100%);
+    }
+    
+}

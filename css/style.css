@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+    --primary_color: #212529;
+    --btn-icon_color: #3759ff;
+    --btn-features_color: #1b2127;
+    --card-color: #0a0022;
+    --boder-gardient_color: rgba(85,82,89,1);
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary_text {
+    color: var(--btn-icon_color);
+}
+
+.primary_color {
+    color: var(--btn-icon_color);
+}
+
+.container-fluid {
+    padding-right: var(--bs-gutter-x,5rem);
+    padding-left: var(--bs-gutter-x,5rem);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.btn {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border-radius: 2rem;
+}
+
+.btn:hover {
+    filter: brightness(1.2);
+    color: #fff;
+}
+
+.banner {
+    background: radial-gradient(circle, 
+    rgba(53,28,218,1) 0%, rgba(33,37,41,1) 15%);
+}
+
+.banner .container {
+    max-width: 800px;
+}
+
+.banner h1, .banner p {
+    color: #fff;
+}
+
+.view, .brand, .features,
+ .features_card, .about,
+ .pricing, .news, .subcribe, .footer,
+ .copyt_right {
+    background: var(--primary_color);
+}
+
+.view_image {
+    transform:
+        perspective(80em)
+        rotateX(18deg);
+    border-radius: 6px;
+  }
+
+  .view_image img {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+
+.brand .container {
+    -webkit-mask-image: 
+    linear-gradient(90deg, transparent 5%,
+     rgba(0, 0, 0, 1) 15%,
+     rgba(0, 0, 0, 1) 85%, transparent 95%);
+}
+
+.brand-item img {
+    padding: 20px;
+    filter: grayscale(100%);
+}
+
+.btn_dark {
+    color: #fff;
+    background: var(--btn-features_color); 
+}
+
+.features_heading h2 {
+    color: #fff;
+}
+
+.features_card_box {
+   height: 100%;
+    color: #fff;
+    padding: 40px 20px;
+    background: var(--card-color);
+    border-radius: 10px;
+}
+
+.features_card_box.main {
+    background: linear-gradient(
+        110deg, 
+        rgba(0,0,0,1) 20%,
+         rgba(53,28,218,1) 38%,
+          rgba(118,45,191,1) 60%,
+           rgba(22,12,91,1) 89%);
+}
+
+.about h2, p{
+    color: #fff;
+}
+
+.about .col-6:first-child{
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to left, var(--btn-icon_color), rgba(56,2,155,0));
+    border-image-slice: 1;
+}
+
+.about .col-6:nth-child(2){
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-image: linear-gradient(38deg, var(--btn-icon_color) 10%, rgba(56,2,155,0) 60%);
+    border-image-slice: 1;
+}
+
+.about .col-6:nth-child(4){
+    border-left: 2px solid transparent;
+    border-image: linear-gradient(to bottom, var(--btn-icon_color), rgba(56,2,155,0));
+    border-image-slice: 1;
+}
+
+.pricing h3 {
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(90deg,rgba(56,2,155,0) 10%, var(--btn-icon_color) 50%, rgba(56,2,155,0) 90%);
+    border-image-slice: 1;
+}
+
+.pricing_card {
+    background: rgba(55,34,94,0.1);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.pricing_card:hover {
+    box-shadow: -4px 12px 29px -3px rgba(61,42,201,0.58);
+    transition: all ease .3s;
+}
+
+.news_card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.news_card_content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background : rgba(0,0,52,0.5);
+    z-index: 2;
+}
+
+.news_content_more, .new_contact_date {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.subcribe_box {
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 2px 0px;
+    background-color: #333;
+}
+
+.subcribe_input {
+    background-color: #333;
+    color: #fff;
+    padding: 7px 15px;
+    outline: none;
+    border: none;
+}
+
+.footer {
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(90deg,rgba(56,2,155,0) 10%, var(--btn-icon_color) 50%, rgba(56,2,155,0) 90%);
+    border-image-slice: 1;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer_logo {
+    width: 35px;
+}
+
+.copyt_right {
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(90deg,rgba(56,2,155,0) 10%, var(--boder-gardient_color) 50%, rgba(56,2,155,0) 90%);
+    border-image-slice: 1;
+}
